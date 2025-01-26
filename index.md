@@ -1,3 +1,7 @@
+---
+layout: default
+title: "Devkumar Dave - Full Stack Developer"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
