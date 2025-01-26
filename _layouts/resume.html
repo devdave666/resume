@@ -2,14 +2,5 @@
 layout: default
 ---
 <div class="container">
-    <header>
-        {% if page.content contains 'Profile Picture' %}
-            <img class="profile-picture" src="/assets/images/profile-picture.jpg" alt="Profile Picture">
-        {% endif %}
-        {{ content | split: '## Objective' | first }}
-    </header>
-    
-    <main>
-        {{ content | split: '## Objective' | last }}
-    </main>
+    {{ content }}
 </div>
