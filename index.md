@@ -5,7 +5,7 @@ title: "Devkumar Dave - Full Stack Developer"
 
 # Devkumar Dave
 
-![Profile Picture](/assets/images/profile-picture.jpg)
+![Profile Picture]({{ site.baseurl }}/assets/images/profile-picture.jpg)
 
 Senior IT Service Desk Analyst | Aspiring Full Stack Developer
 
