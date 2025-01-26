@@ -5,15 +5,13 @@ title: "Devkumar Dave - Full Stack Developer"
 
 # Devkumar Dave
 
+**Senior IT Service Desk Analyst | Aspiring Full Stack Developer**
+
 ![Profile Picture]({{ site.baseurl }}/assets/images/profile-picture.jpg)
 
-Senior IT Service Desk Analyst | Aspiring Full Stack Developer
-
-Email: [devkumardave26@gmail.com](mailto:devkumardave26@gmail.com)
-
-Phone: [(647) 676-6969](tel:+16476766969)
-
-LinkedIn: [linkedin.com/in/devkumar-dave](https://www.linkedin.com/in/devkumar-dave)
+**Email**: [devkumardave26@gmail.com](mailto:devkumardave26@gmail.com)  
+**Phone**: (647) 676-6969  
+**LinkedIn**: [linkedin.com/in/devkumar-dave](https://linkedin.com/in/devkumar-dave)
 
 ## Objective
 
