@@ -1,1 +1,22 @@
 title: "Devkumar Dave - Resume"
+baseurl: "" # Leave empty since your site is at the root
+url: "https://devkumardave.netlify.app" # Replace with your custom domain if you have one
+
+# Collections (if any)
+collections:
+  # We can leave this empty unless you have custom collections
+
+# Exclude files from the build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+
+# Include files in the build
+include:
+  - assets
+
+# Plugins (if needed)
+plugins:
+  - jekyll-feed
