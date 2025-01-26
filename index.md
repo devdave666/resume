@@ -4,7 +4,7 @@ title: "Devkumar Dave - Full Stack Developer"
 ---
 Devkumar Dave - Full Stack Developer        
 
-![Profile Picture](profile-picture.jpg)
+![Profile Picture](/assets/profile-picture.jpg)
 
 # Devkumar Dave
 
