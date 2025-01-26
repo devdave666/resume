@@ -1,22 +1,3 @@
 title: "Devkumar Dave - Resume"
-baseurl: "/resume"
-url: "https://devdave666.github.io"
-
-# Collections (if any)
-collections:
-  # We can leave this empty unless you have custom collections
-
-# Exclude files from the build
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-  - .ruby-version
-
-# Include files in the build
-include:
-  - assets
-
-# Plugins (if needed)
-plugins:
-  - jekyll-feed
+baseurl: ""
+url: "https://devkumardave.netlify.app"
