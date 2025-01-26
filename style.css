@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.headline {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Section Styles */
+section {
+    margin-top: 30px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+}
+
+.skills-list, .certifications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li, .certifications-list li {
+    padding: 5px 0;
+}
+
+.experience, .education, .project, .award {
+    margin-top: 20px;
+}
+
+.experience h3, .education h3, .project h3, .award h3 {
+    font-size: 20px;
+    color: #0066cc;
+    margin-bottom: 5px;
+}
+
+.experience p em, .education p em, .award h3 em {
+    font-size: 16px;
+    color: #777;
+}
+
+.experience ul, .project ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.experience ul li, .project ul li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 2px solid #e0e0e0;
+    color: #777;
+    font-size: 14px;
+}
