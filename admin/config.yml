@@ -1,13 +1,9 @@
 backend:
-  name: github
-  repo: devdave666/resume
+  name: git-gateway
   branch: main
-  auth_endpoint: https://devdave666.github.io/resume/oauth.html
 
-site_url: https://devdave666.github.io/resume/
-
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
   - name: "pages"
@@ -19,4 +15,3 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown" }
-          
