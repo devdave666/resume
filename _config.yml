@@ -1,6 +1,6 @@
 title: "Devkumar Dave - Resume"
-baseurl: "" # Leave empty since your site is at the root
-url: "https://devkumardave.netlify.app" # Replace with your custom domain if you have one
+baseurl: "/resume"
+url: "https://devdave666.github.io"
 
 # Collections (if any)
 collections:
