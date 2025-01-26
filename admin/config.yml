@@ -2,6 +2,9 @@ backend:
   name: github
   repo: devdave666/resume
   branch: main
+  auth_endpoint: https://devdave666.github.io/resume/oauth.html
+
+site_url: https://devdave666.github.io/resume/
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -16,3 +19,4 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Content", name: "body", widget: "markdown" }
+          
