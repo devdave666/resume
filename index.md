@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: resume
 title: "Devkumar Dave - Full Stack Developer"
 ---
 
