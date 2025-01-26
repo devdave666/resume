@@ -2,11 +2,10 @@
 layout: default
 title: "Devkumar Dave - Full Stack Developer"
 ---
-Devkumar Dave - Full Stack Developer        
-
-![Profile Picture](/assets/profile-picture.jpg)
 
 # Devkumar Dave
+
+![Profile Picture](/assets/images/profile-picture.jpg)
 
 Senior IT Service Desk Analyst | Aspiring Full Stack Developer
 
