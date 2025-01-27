@@ -189,7 +189,7 @@ section {
 }
 
 /* Cards for Content Sections */
-.card {
+.card, .project-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 30px;
@@ -197,15 +197,11 @@ section {
   position: relative;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 20px; /* Add spacing between cards */
+  margin-bottom: 20px;
+  z-index: 1;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card::before {
+.card::before, .project-card::before {
   content: '';
   position: absolute;
   width: 6px;
@@ -213,11 +209,126 @@ section {
   background-color: var(--primary-color);
   left: 0;
   top: 0;
-  transition: width 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
 }
 
-.card:hover::before {
-  width: 8px;
+.card::after, .project-card::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.1;
+  left: 0;
+  top: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -2;
+}
+
+.card:hover, .project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover::before, .project-card:hover::before {
+  width: 100%;
+  background-color: var(--primary-color);
+  opacity: 0.05;
+}
+
+.card:hover::after, .project-card:hover::after {
+  width: 100%;
+  transition-delay: 0.1s;
+}
+
+/* Card Content Styles */
+.card h3, .project-card h3 {
+  font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.card h4, .project-card h4 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.card .date-range {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.card ul, .project-card ul {
+  list-style: none;
+  padding-left: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.card ul li, .project-card ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+
+.card ul li::before, .project-card ul li::before {
+  content: '\f0da';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--primary-color);
+}
+
+.card p, .project-card p {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover effect for text to ensure readability */
+.card:hover h3,
+.card:hover h4,
+.card:hover p,
+.card:hover li,
+.project-card:hover h3,
+.project-card:hover h4,
+.project-card:hover p,
+.project-card:hover li {
+  transition: color 0.3s ease;
+}
+
+/* Education Cards */
+.education .card {
+  margin-bottom: 20px;
+}
+
+/* Project Cards specific styles */
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.project-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card,
+  .project-card {
+    margin-bottom: 15px;
+  }
 }
 
 /* Education Cards - Add specific styling if needed */
