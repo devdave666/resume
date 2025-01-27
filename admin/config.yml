@@ -111,3 +111,18 @@ collections:
               - label: "Description"
                 name: "description"
                 widget: "markdown"
+  # Contact collection
+  - name: "contact"
+    label: "Contact Information"
+    files:
+      - file: "_data/contact.yml"
+        label: "Contact Information"
+        name: "contact"
+        fields:
+          - label: "Contacts"
+            name: "contacts"
+            widget: "list"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Icon Class", name: "icon", widget: "string" }
