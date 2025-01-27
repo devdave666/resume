@@ -1,7 +1,7 @@
 contacts:
   - label: "Email"
     url: "mailto:devkumardave26@gmail.com"
-    icon: "fa-solid fa-envelope"
+    icon: "fa-regular fa-envelope"
   - label: "LinkedIn"
     url: "https://linkedin.com/in/devkumar-dave"
     icon: "fa-brands fa-linkedin"
@@ -10,4 +10,4 @@ contacts:
     icon: "fa-brands fa-github"
   - label: "Gmail"
     url: "mailto:devkumardave26@gmail.com"
-    icon: "fa-solid fa-envelope"
+    icon: "fa-regular fa-envelope"
