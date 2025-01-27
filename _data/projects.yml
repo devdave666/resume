@@ -1,4 +1,6 @@
-- title: "Web Application Development Project"
-  description: "Developed a full-stack web application using Python (Django), HTML, CSS, and JavaScript. Implemented user authentication, data visualization, and responsive design. Deployed the application on AWS, ensuring scalability and security."
-- title: "Automation Script for Ticket Management"
-  description: "Created a Python script to automate the generation of ServiceNow reports. Improved efficiency by reducing manual report generation time by 50%."
+projects:
+  - title: "Web Application Development Project"
+    description: "Developed a full-stack web application using Python (Django), HTML, CSS, and JavaScript..."
+  - title: "Automation Script for Ticket Management"
+    description: "Created a Python script to automate the generation of ServiceNow reports..."
+  # Add more projects...
