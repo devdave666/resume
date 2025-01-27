@@ -473,10 +473,14 @@ main {
     min-width: 110px;
 }
 
-/* Icon specific styles */
 .contact-button i {
-    font-size: 16px;
+    display: inline-block !important;
+    font-size: 16px !important;
     margin-right: 6px;
+    visibility: visible !important;
+}
+
+.contact-button span {
     display: inline-block;
 }
 
@@ -493,10 +497,6 @@ main {
     
     .contact-button {
         padding: 6px 20px;
-        font-size: 14px;
-    }
-    
-    .contact-button i {
         font-size: 14px;
     }
 }
