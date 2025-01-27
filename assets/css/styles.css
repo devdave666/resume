@@ -453,34 +453,58 @@ main {
   margin-top: 40px;
 }
 
-.contact-section a {
+.contact-button {
   display: flex;
   align-items: center;
   padding: 12px 20px;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 50px;
   text-decoration: none;
   color: var(--text-color);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 
-.contact-section a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.contact-section i {
+.contact-button i {
   font-size: 24px;
   color: var(--primary-color);
   margin-right: 10px;
+  transition: transform 0.3s ease;
 }
 
-.contact-label {
+.contact-button .contact-label {
   font-size: 18px;
   font-weight: 500;
-  color: var(--text-color);
+}
+
+.contact-button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--primary-color);
+  z-index: -1;
+  transition: width 0.3s ease;
+}
+
+.contact-button:hover {
+  color: #fff;
+}
+
+.contact-button:hover::before {
+  width: 100%;
+}
+
+.contact-button:hover i {
+  transform: scale(1.1);
+}
+
+.contact-button:hover .contact-label {
+  color: #fff;
 }
 
 /* Responsive adjustments for contact section */
@@ -490,7 +514,7 @@ main {
     align-items: center;
   }
 
-  .contact-section a {
+  .contact-button {
     width: 100%;
     justify-content: center;
   }
