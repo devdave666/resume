@@ -2,27 +2,35 @@
 layout: default
 ---
 
-<header class="profile-header">
-  <!-- Background Image -->
-  <div class="background-image">
-    <!-- Optional: Add a background image URL -->
+<!-- Navigation Bar -->
+<nav>
+  <div class="container">
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
+</nav>
 
-  <!-- Profile Information -->
-  <div class="profile-info">
-    <!-- Profile Picture -->
-    <img src="{{ site.baseurl }}/assets/images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+<!-- Hero Section -->
+<header class="profile-header">
+  <!-- Profile Picture -->
+  <img src="{{ site.baseurl }}/assets/images/profile-picture.jpg" alt="Profile Picture" class="profile-picture" data-aos="fade-up">
 
-    <!-- Name and Headline -->
-    <h1>{{ site.title }}</h1>
-    <h2 class="headline">Senior IT Service Desk Analyst | Aspiring Full Stack Developer</h2>
+  <!-- Name and Headline -->
+  <h1 data-aos="fade-up" data-aos-delay="100">{{ site.title }}</h1>
+  <p class="headline" data-aos="fade-up" data-aos-delay="200">Senior IT Service Desk Analyst | Aspiring Full Stack Developer</p>
 
-    <!-- Contact Information -->
-    <p class="contact-info">
-      <a href="mailto:devkumardave26@gmail.com">Email</a> | 
-      <a href="tel:+16476766969">Phone</a> | 
-      <a href="https://linkedin.com/in/devkumar-dave" target="_blank">LinkedIn</a>
-    </p>
+  <!-- Contact Information -->
+  <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+    <a href="mailto:devkumardave26@gmail.com"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/devkumardave" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/devdave666" target="_blank"><i class="fab fa-github"></i></a>
   </div>
 </header>
 
@@ -32,3 +40,8 @@ layout: default
     {{ content }}
   </main>
 </div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2023 Devkumar Dave. All rights reserved.
+</footer>
