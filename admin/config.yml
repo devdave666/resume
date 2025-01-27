@@ -112,10 +112,10 @@ collections:
                 name: "description"
                 widget: "markdown"
 
-  # Contact Collection
-  - name: "contact"
-    label: "Contact Information"
-    files:
+    # Contact Collection
+    - name: "contact"
+      label: "Contact Information"
+      files:
       - file: "_data/contact.yml"
         label: "Contact Links"
         name: "contact"
@@ -124,6 +124,20 @@ collections:
             name: "contacts"
             widget: "list"
             fields:
-              - {label: "Label", name: "label", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-              - {label: "Icon Class", name: "icon", widget: "string", hint: "Font Awesome icon class (e.g., fas fa-envelope)"}
+              - label: "Label"
+                name: "label"
+                widget: "string"
+                hint: "Display name for the contact method (e.g., Email, LinkedIn)"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+                hint: "Full URL including https:// or mailto: for email"
+              - label: "Icon Class"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "Email", value: "fas fa-envelope" }
+                  - { label: "LinkedIn", value: "fab fa-linkedin-in" }
+                  - { label: "GitHub", value: "fab fa-github" }
+                  - { label: "Gmail", value: "fas fa-envelope-square" }
+                hint: "Choose the icon for this contact method"
