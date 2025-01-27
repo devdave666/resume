@@ -111,7 +111,8 @@ collections:
               - label: "Description"
                 name: "description"
                 widget: "markdown"
-  # Contact collection
+
+  # Contact Collection
   - name: "contact"
     label: "Contact Information"
     files:
