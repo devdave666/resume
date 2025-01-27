@@ -1,87 +1,80 @@
 ---
 layout: resume
-title: Devkumar Dave - Full Stack Developer
+title: "Devkumar Dave - Full Stack Developer"
 ---
-## About
+
+## About {#about}
 
 Dedicated IT professional with over 2 years of experience in IT support and service management. Proficient in Python, HTML, CSS, and web development technologies. Seeking a Full Stack Developer position to leverage technical expertise and contribute to innovative software solutions while continuing to develop leadership skills.
 
-## Experience
+## Experience {#experience}
 
-### Senior IT Service Desk Analyst / Queue Manager | CGI Inc.
+<div class="card" data-aos="fade-up">
+  <h3>Senior IT Service Desk Analyst / Queue Manager</h3>
+  <h4>CGI Inc.</h4>
+  <p class="date-range">June 2021 – Present</p>
+  <ul>
+    <li>Managed client communications and diagnosed technical issues across diverse systems.</li>
+    <li>Created and optimized processes and ServiceNow dashboards to enhance operational efficiency.</li>
+    <!-- Add more bullet points -->
+  </ul>
+</div>
 
-**June 2021 – Present**
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+  <h3>Office Administrator</h3>
+  <h4>Dr. Kachicnik and Associates Dental Office</h4>
+  <p class="date-range">July 2018 – February 2020</p>
+  <ul>
+    <li>Warmly greeted patients and visitors, ensuring a positive first impression.</li>
+    <li>Managed incoming calls, scheduled appointments, and maintained the office calendar for efficient workflow.</li>
+    <!-- Add more bullet points -->
+  </ul>
+</div>
 
-* As L1 Queue Manager at CGI, I manage client contact, diagnose issues, resolve requests, optimize processes, create ServiceNow Dashboards, ensure SLA compliance, and report on queue trends with efficiency and professionalism.
-* Improved first contact resolution rate to 85%, efficiently resolving most issues during the initial interaction. Lowered the L1 queue to below 100 from 750, surpassing the SLA target of 500 tickets.
-* Adhered to a strict protocol of providing updates on all open tickets within a 24-hour window, significantly improving customer communication and satisfaction.
-* Implemented a systematic approach for preemptive follow-ups, ensuring all client inquiries and issues were addressed comprehensively, resulting in heightened customer satisfaction and reduced resolution times.
-* Ensured strict adherence to Service Level Agreements (SLAs), achieving a 98% compliance rate, and significantly enhancing service reliability and customer trust.
-* Implemented process improvements that increased the ticket closure rate by 25%, resulting in faster resolution times and improved customer satisfaction.
+## Education {#education}
 
-### Office Administrator | Dr. Kachicnik and Associates Dental Office
+<div class="card" data-aos="fade-up">
+  <h3>Certificate in Information Technology</h3>
+  <h4>NPower Canada</h4>
+  <p class="date-range">February 2021 – June 2021</p>
+</div>
 
-**July 2018 – February 2020**
+<div class="card" data-aos="fade-up" data-aos-delay="100">
+  <h3>Advanced Diploma in Mechanical Engineering Technology</h3>
+  <h4>Seneca College</h4>
+  <p class="date-range">January 2018 – September 2020</p>
+</div>
 
-* Greeted patients and visitors warmly, ensuring a positive first impression and enhancing patient satisfaction.
-* Answered incoming calls, scheduled appointments, and managed the office calendar, maintaining an organized and efficient workflow.
-* Maintained and updated patient records and appointment schedules, ensuring accuracy and confidentiality.
-* Handled billing and insurance claims, ensuring timely submission and accurate processing.
-* Processed payments and managed accounts receivable, contributing to the financial health of the office.
-* Assisted dental staff with day-to-day operations, including preparing patient charts and organizing materials, facilitating smooth office operations.
-* Coordinated with suppliers and managed inventory, ensuring the availability of necessary dental and office supplies.
-* Implemented and maintained office policies and procedures to ensure compliance with industry standards and regulations.
-* Monitored and managed office equipment, arranging for repairs or replacements as needed.
-* Ensured a positive and welcoming atmosphere for all patients, addressing concerns or complaints with professionalism and empathy.
-* Conducted follow-up calls to check on patients after procedures, ensuring their satisfaction with the service.
-* Utilized dental office software for scheduling, billing, and record-keeping, staying updated on new technologies and software updates.
+## Skills {#skills}
 
-## Education
+<ul class="skills-list" data-aos="zoom-in">
+  <li>Python</li>
+  <li>JavaScript</li>
+  <li>HTML5</li>
+  <li>CSS3</li>
+  <li>React</li>
+  <li>Node.js</li>
+  <li>SQL</li>
+  <li>MongoDB</li>
+  <!-- Add more skills -->
+</ul>
 
-### Certificate in Information Technology | NPower Canada
+## Projects {#projects}
 
-**February 2021 – June 2021**
+<div class="project-card" data-aos="fade-up">
+  <h3>Web Application Development Project</h3>
+  <p>Developed a full-stack web application using Python (Django), HTML, CSS, and JavaScript. Implemented user authentication, data visualization, and responsive design.</p>
+</div>
 
-### Advanced Diploma in Mechanical Engineering Technology | Seneca College
+<div class="project-card" data-aos="fade-up" data-aos-delay="100">
+  <h3>Automation Script for Ticket Management</h3>
+  <p>Created a Python script to automate the generation of ServiceNow reports. Improved efficiency by reducing manual report generation time by 50%.</p>
+</div>
 
-**January 2018 – September 2020**
+## Contact {#contact}
 
-## Skills
-
-* **Programming Languages:** Python, JavaScript, HTML5, CSS3
-* **Web Development:** Front-end (React, Angular), Back-end (Node.js, Express)
-* **Database Management:** SQL, MongoDB
-* **Tools & Technologies:** Git, GitHub, ServiceNow, Agile/Scrum methodologies
-
-## Certifications
-
-* **Google IT Support Professional Certificate** (CompTIA A+ equivalent) | Coursera | May 2021
-* **Windows Server 2022** | Skillsoft | January 2023
-* **Problem Solving and Decision Making through Leadership** | Skillsoft | December 2024
-
-## Projects
-
-### Web Application Development Project
-
-**Project Highlights:**
-
-* **Created a Responsive Resume Website with Jekyll**: Built a professional and responsive resume website using Jekyll, showcasing expertise in static site generation and modern web development practices.
-* **Deployed the Site on GitHub Pages and Netlify**: Successfully hosted the website on both GitHub Pages and Netlify, ensuring high availability and utilizing continuous deployment workflows.
-* **Integrated Netlify CMS for Content Management**: Implemented Netlify CMS to enable easy, browser-based editing of website content, allowing updates without direct code modifications.
-* **Configured Authentication with Netlify Identity and Git Gateway**: Set up secure user authentication and authorization using Netlify Identity and Git Gateway, ensuring that only authorized users can edit the site's content through the CMS.
-
-## Awards
-
-### Bravo Award | CGI Inc. | August 2022
-
-*"Thank you, Devkumar, for your constant hard work in the Backlog team. You are always available and willing to take on more tasks. We really appreciate your work—you are truly a superhero!"*
-
-### Bravo Award | CGI Inc. | June 2024
-
-*"Great work on the backlog in the past months. Keep up your great work!"*
-
-## Contact
-
-Feel free to [reach out via email](mailto:devkumardave26@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/devkumar-dave).
-
-© 2025 Devkumar Dave. All rights reserved.
+<div class="contact-section" data-aos="fade-up">
+  <a href="mailto:devkumardave26@gmail.com"><i class="fas fa-envelope"></i></a>
+  <a href="https://linkedin.com/in/devkumar-dave" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://github.com/devdave666" target="_blank"><i class="fab fa-github"></i></a>
+</div>
