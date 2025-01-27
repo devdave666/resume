@@ -473,8 +473,11 @@ main {
     min-width: 110px;
 }
 
+/* Icon specific styles */
 .contact-button i {
     font-size: 16px;
+    margin-right: 6px;
+    display: inline-block;
 }
 
 .contact-button:hover {
@@ -490,6 +493,10 @@ main {
     
     .contact-button {
         padding: 6px 20px;
+        font-size: 14px;
+    }
+    
+    .contact-button i {
         font-size: 14px;
     }
 }
