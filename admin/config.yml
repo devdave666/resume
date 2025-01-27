@@ -112,10 +112,10 @@ collections:
                 name: "description"
                 widget: "markdown"
 
-    # Contact Collection
-    - name: "contact"
-      label: "Contact Information"
-      files:
+  # Contact Collection
+  - name: "contact"
+    label: "Contact Information"
+    files:
       - file: "_data/contact.yml"
         label: "Contact Links"
         name: "contact"
