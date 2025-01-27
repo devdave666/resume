@@ -4,7 +4,7 @@ contacts:
     icon: "fas fa-envelope"
   - label: "LinkedIn"
     url: "https://linkedin.com/in/devkumar-dave"
-    icon: "fab fa-linkedin"
+    icon: "fab fa-linkedin-in"
   - label: "GitHub"
     url: "https://github.com/devdave666"
     icon: "fab fa-github"
