@@ -1,65 +1,54 @@
 ---
 layout: resume
-title: Devkumar Dave - Full Stack Developer
+title: "Devkumar Dave - Full Stack Developer"
 ---
-## Objective
+
+## About
 
 Dedicated IT professional with over 2 years of experience in IT support and service management. Proficient in Python, HTML, CSS, and web development technologies. Seeking a Full Stack Developer position to leverage technical expertise and contribute to innovative software solutions while continuing to develop leadership skills.
 
-## Core Skills
+## Experience
 
-* **Programming Languages:** Python, JavaScript, HTML5, CSS3
-* **Web Development:** Front-end (React, Angular), Back-end (Node.js, Express)
-* **Database Management:** SQL, MongoDB
-* **Tools & Technologies:** Git, GitHub, ServiceNow, Agile/Scrum methodologies
-* **IT Support:** Troubleshooting, SLA management, ServiceNow dashboard creation
-* **Soft Skills:** Leadership, Team Collaboration, Problem-Solving, Customer Service
-* **Languages:** English (Fluent), Hindi (Fluent), Gujarati (Fluent)
+### Senior IT Service Desk Analyst / Queue Manager | CGI Inc.
 
-## Professional Experience
+**June 2021 – Present**
 
-### Senior IT Service Desk Analyst / Queue Manager
+- Managed client communications and diagnosed technical issues across diverse systems.
+- Created and optimized processes and ServiceNow dashboards to enhance operational efficiency.
+- Achieved an 85% first-contact resolution rate, efficiently resolving most issues during initial interactions.
+- [Add more bullet points as needed]
 
-*CGI Inc., Toronto | June 2021 – Present*
+### Office Administrator | Dr. Kachicnik and Associates Dental Office
 
-* Managed client communications and diagnosed technical issues across diverse systems.
-* Created and optimized processes and ServiceNow dashboards to enhance operational efficiency.
-* Achieved an 85% first-contact resolution rate, efficiently resolving most issues during initial interactions.
-* Reduced Level 1 ticket queue from 750 to under 100, surpassing the SLA target of 500 tickets.
-* Implemented a 24-hour update protocol on all open tickets, improving customer communication and satisfaction.
-* Developed systematic preemptive follow-up procedures, resulting in heightened customer satisfaction and reduced resolution times.
-* Ensured 98% adherence to Service Level Agreements (SLAs), enhancing service reliability and customer trust.
-* Introduced process improvements that increased ticket closure rate by 25%, leading to faster resolution times.
+**July 2018 – February 2020**
 
-### Office Administrator
-
-*Dr. Kachicnik and Associates Dental Office | July 2018 – February 2020*
-
-* Warmly greeted patients and visitors, ensuring a positive first impression.
-* Managed incoming calls, scheduled appointments, and maintained the office calendar for efficient workflow.
-* Maintained and updated patient records and appointment schedules with accuracy and confidentiality.
-* Handled billing, insurance claims, and accounts receivable, contributing to the financial health of the office.
-* Assisted dental staff with day-to-day operations, including preparing patient charts and organizing materials.
-* Coordinated with suppliers and managed inventory to ensure availability of necessary dental and office supplies.
-* Implemented and maintained office policies and procedures to ensure compliance with industry standards.
-* Monitored and managed office equipment, arranging repairs or replacements as needed.
-* Conducted follow-up calls to patients post-procedures to ensure satisfaction with services provided.
+- Warmly greeted patients and visitors, ensuring a positive first impression.
+- Managed incoming calls, scheduled appointments, and maintained the office calendar for efficient workflow.
+- [Add more bullet points as needed]
 
 ## Education
 
-### Certificate in Information Technology
+### Certificate in Information Technology | NPower Canada
 
-*NPower Canada | February 2021 – June 2021*
+**February 2021 – June 2021**
 
-### Advanced Diploma in Mechanical Engineering Technology
+### Advanced Diploma in Mechanical Engineering Technology | Seneca College
 
-*Seneca College | January 2018 – September 2020*
+**January 2018 – September 2020**
+
+## Skills
+
+- **Programming Languages:** Python, JavaScript, HTML5, CSS3
+- **Web Development:** Front-end (React, Angular), Back-end (Node.js, Express)
+- **Database Management:** SQL, MongoDB
+- **Tools & Technologies:** Git, GitHub, ServiceNow, Agile/Scrum methodologies
+- [Add more skills as needed]
 
 ## Certifications
 
-* **Google IT Support Professional Certificate** (CompTIA A+ equivalent) | Coursera | May 2021
-* **Windows Server 2022** | Skillsoft | January 2023
-* **Problem Solving and Decision Making through Leadership** | Skillsoft | December 2024
+- **Google IT Support Professional Certificate** (CompTIA A+ equivalent) | Coursera | May 2021
+- **Windows Server 2022** | Skillsoft | January 2023
+- **Problem Solving and Decision Making through Leadership** | Skillsoft | December 2024
 
 ## Projects
 
@@ -81,5 +70,9 @@ Dedicated IT professional with over 2 years of experience in IT support and serv
 ### Bravo Award | CGI Inc. | June 2024
 
 *"Great work on the backlog in the past months. Keep up your great work!"*
+
+## Contact
+
+Feel free to [reach out via email](mailto:devkumardave26@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/devkumar-dave).
 
 © 2023 Devkumar Dave. All rights reserved.
