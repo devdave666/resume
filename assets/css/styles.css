@@ -84,12 +84,12 @@ nav ul li a:hover {
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)
         ),
-        url('{{ site.baseurl }}/assets/images/background.jpg') center/cover fixed;
+        url('/assets/images/background.jpg') center/cover fixed;
     color: #fff;
     text-align: center;
     padding: 150px 20px 100px;
     overflow: visible;
-    margin-top: 70px; /* Add margin to push down from the fixed nav bar */
+    margin-top: 70px;
 }
 
 .profile-header h1 {
