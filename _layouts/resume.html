@@ -120,8 +120,8 @@ layout: default
   <div class="contact-section">
     {% for contact in site.data.contact.contacts %}
       <a href="{{ contact.url }}" target="_blank" class="contact-button">
-        <i class="{{ contact.icon }}"></i>
-        {{ contact.label }}
+        <i class="{{ contact.icon }}" aria-hidden="true"></i>
+        <span>{{ contact.label }}</span>
       </a>
     {% endfor %}
   </div>
