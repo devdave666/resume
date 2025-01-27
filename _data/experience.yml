@@ -1,5 +1,5 @@
 experience:
-   - title: "Senior IT Service Desk Analyst / Queue Manager"
+  - title: "Senior IT Service Desk Analyst / Queue Manager"
     company: "CGI Inc."
     dates: "June 2021 – Present"
     details:
@@ -11,6 +11,7 @@ experience:
       - "Developed systematic preemptive follow-up procedures, resulting in heightened customer satisfaction and reduced resolution times."
       - "Ensured 98% adherence to Service Level Agreements (SLAs), enhancing service reliability and customer trust."
       - "Introduced process improvements that increased ticket closure rate by 25%, leading to faster resolution times."
+  
   - title: "Office Administrator"
     company: "Dr. Kachicnik and Associates Dental Office"
     dates: "July 2018 – February 2020"
