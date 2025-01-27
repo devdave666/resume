@@ -12,18 +12,29 @@ Dedicated IT professional with over 2 years of experience in IT support and serv
 
 **June 2021 – Present**
 
-* Managed client communications and diagnosed technical issues across diverse systems.
-* Created and optimized processes and ServiceNow dashboards to enhance operational efficiency.
-* Achieved an 85% first-contact resolution rate, efficiently resolving most issues during initial interactions.
-* \[Add more bullet points as needed]
+* As L1 Queue Manager at CGI, I manage client contact, diagnose issues, resolve requests, optimize processes, create ServiceNow Dashboards, ensure SLA compliance, and report on queue trends with efficiency and professionalism.
+* Improved first contact resolution rate to 85%, efficiently resolving most issues during the initial interaction. Lowered the L1 queue to below 100 from 750, surpassing the SLA target of 500 tickets.
+* Adhered to a strict protocol of providing updates on all open tickets within a 24-hour window, significantly improving customer communication and satisfaction.
+* Implemented a systematic approach for preemptive follow-ups, ensuring all client inquiries and issues were addressed comprehensively, resulting in heightened customer satisfaction and reduced resolution times.
+* Ensured strict adherence to Service Level Agreements (SLAs), achieving a 98% compliance rate, and significantly enhancing service reliability and customer trust.
+* Implemented process improvements that increased the ticket closure rate by 25%, resulting in faster resolution times and improved customer satisfaction.
 
 ### Office Administrator | Dr. Kachicnik and Associates Dental Office
 
 **July 2018 – February 2020**
 
-* Warmly greeted patients and visitors, ensuring a positive first impression.
-* Managed incoming calls, scheduled appointments, and maintained the office calendar for efficient workflow.
-* \[Add more bullet points as needed]
+* Greeted patients and visitors warmly, ensuring a positive first impression and enhancing patient satisfaction.
+* Answered incoming calls, scheduled appointments, and managed the office calendar, maintaining an organized and efficient workflow.
+* Maintained and updated patient records and appointment schedules, ensuring accuracy and confidentiality.
+* Handled billing and insurance claims, ensuring timely submission and accurate processing.
+* Processed payments and managed accounts receivable, contributing to the financial health of the office.
+* Assisted dental staff with day-to-day operations, including preparing patient charts and organizing materials, facilitating smooth office operations.
+* Coordinated with suppliers and managed inventory, ensuring the availability of necessary dental and office supplies.
+* Implemented and maintained office policies and procedures to ensure compliance with industry standards and regulations.
+* Monitored and managed office equipment, arranging for repairs or replacements as needed.
+* Ensured a positive and welcoming atmosphere for all patients, addressing concerns or complaints with professionalism and empathy.
+* Conducted follow-up calls to check on patients after procedures, ensuring their satisfaction with the service.
+* Utilized dental office software for scheduling, billing, and record-keeping, staying updated on new technologies and software updates.
 
 ## Education
 
@@ -72,7 +83,5 @@ Dedicated IT professional with over 2 years of experience in IT support and serv
 ## Contact
 
 Feel free to [reach out via email](mailto:devkumardave26@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/devkumar-dave).
-
-
 
 © 2023 Devkumar Dave. All rights reserved.
