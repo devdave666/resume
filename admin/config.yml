@@ -117,13 +117,13 @@ collections:
     label: "Contact Information"
     files:
       - file: "_data/contact.yml"
-        label: "Contact Information"
+        label: "Contact Links"
         name: "contact"
         fields:
           - label: "Contacts"
             name: "contacts"
             widget: "list"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Icon Class", name: "icon", widget: "string" }
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Icon Class", name: "icon", widget: "string", hint: "Font Awesome icon class (e.g., fas fa-envelope)"}
