@@ -387,29 +387,90 @@ footer {
 /* Contact Info Styles */
 .contact-info {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding: 0 20px;
 }
 
 .contact-link {
   display: flex;
   align-items: center;
-  margin: 10px 15px;
+  padding: 10px 20px;
   font-size: 18px;
   color: #fff;
   text-decoration: none;
-  transition: transform 0.3s, color 0.3s;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.contact-link:hover::before {
+  transform: scaleX(1);
 }
 
 .contact-link:hover {
   transform: translateY(-5px);
-  color: var(--secondary-color);
 }
 
 .contact-icon {
-  margin-right: 8px;
+  margin-right: 12px;
   font-size: 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-text {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-link:hover .contact-text {
+  color: #333;
+}
+
+.contact-link:hover .contact-icon {
+  transform: scale(1.1);
+}
+
+/* Responsive adjustments for contact info */
+@media (max-width: 768px) {
+  .contact-info {
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .contact-icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+}
+
+/* Add smooth transition for all hover effects */
+.contact-icon,
+.contact-text {
+  transition: all 0.3s ease;
 }
 
 /* End of CSS */
