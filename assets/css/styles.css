@@ -35,13 +35,15 @@ nav {
   background-color: #fff;
   border-bottom: 1px solid #e1e9ee;
   z-index: 1; /* Lower than the profile picture's z-index */
+  height: 70px; /* Set the exact height of the nav bar */
 }
 
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  height: 70px; /* Ensure the container matches the nav bar height */
+  padding: 0 20px; /* Adjust padding as needed */
 }
 
 nav .logo {
@@ -75,7 +77,8 @@ nav ul li a:hover {
   background: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
-    ), url('{{ site.baseurl }}/assets/images/background.jpg') center/cover fixed;
+    ),
+    url('{{ site.baseurl }}/assets/images/background.jpg') center/cover fixed;
   color: #fff;
   text-align: center;
   padding: 150px 20px 100px;
@@ -145,15 +148,18 @@ nav ul li a:hover {
   padding: 0 20px;
 }
 
-/* Scroll Margin to Offset Fixed Navigation Bar */
+/* Adjust Sections to Offset Fixed Navigation Bar */
 section {
-  scroll-margin-top: 80px; /* Adjust this value if needed */
+  position: relative;
+  padding-top: 70px; /* Height of the nav bar */
+  margin-top: -70px; /* Negative margin to offset the padding */
 }
 
 /* Section Titles */
 .section-title {
   position: relative;
   font-size: 32px;
+  margin-top: 0; /* Remove any top margin */
   margin-bottom: 40px;
   text-align: center;
   font-weight: 700;
@@ -363,11 +369,6 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
-}
-
-/* Scroll Margin to Offset Fixed Navigation Bar */
-section {
-  scroll-margin-top: 80px; /* Adjust this value if needed */
 }
 
 /* End of CSS */
