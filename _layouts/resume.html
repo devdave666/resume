@@ -114,18 +114,18 @@ layout: default
       {% endfor %}
     </section>
 
-   <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
-    <h2 class="section-title">Contact</h2>
-    <div class="contact-section">
-      {% for contact in site.data.contact.contacts %}
-        <a href="{{ contact.url }}" target="_blank" class="contact-button">
-          <i class="{{ contact.icon }}"></i>
-          <span class="contact-label">{{ contact.label }}</span>
-        </a>
-      {% endfor %}
-    </div>
-  </section>
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-section">
+    {% for contact in site.data.contact.contacts %}
+      <a href="{{ contact.url }}" target="_blank" class="contact-button">
+        <i class="{{ contact.icon }}"></i>
+        {{ contact.label }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
 
   </main>
 </div>
