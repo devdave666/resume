@@ -384,5 +384,32 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
 }
+/* Contact Info Styles */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  margin: 10px 15px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+  transform: translateY(-5px);
+  color: var(--secondary-color);
+}
+
+.contact-icon {
+  margin-right: 8px;
+  font-size: 24px;
+}
 
 /* End of CSS */
