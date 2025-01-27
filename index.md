@@ -3,16 +3,6 @@ layout: resume
 title: "Devkumar Dave - Full Stack Developer"
 ---
 
-# Devkumar Dave
-
-**Senior IT Service Desk Analyst | Aspiring Full Stack Developer**
-
-![Profile Picture]({{ site.baseurl }}/assets/images/profile-picture.jpg)
-
-**Email**: [devkumardave26@gmail.com](mailto:devkumardave26@gmail.com)  
-**Phone**: (647) 676-6969  
-**LinkedIn**: [linkedin.com/in/devkumar-dave](https://linkedin.com/in/devkumar-dave)
-
 ## Objective
 
 Dedicated IT professional with over 2 years of experience in IT support and service management. Proficient in Python, HTML, CSS, and web development technologies. Seeking a Full Stack Developer position to leverage technical expertise and contribute to innovative software solutions while continuing to develop leadership skills.
