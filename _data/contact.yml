@@ -10,4 +10,4 @@ contacts:
     icon: "fa-brands fa-github"
   - label: "Gmail"
     url: "mailto:devkumardave26@gmail.com"
-    icon: "fa-solid fa-envelope-square"
+    icon: "fa-solid fa-envelope"
