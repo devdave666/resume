@@ -19,6 +19,7 @@ jobs:
     
     - name: Install dependencies
       run: |
+        gem install jekyll -v 4.2.0  # Specify the Jekyll version you need
         bundle config path vendor/bundle
         bundle install --jobs 4 --retry 3
         
