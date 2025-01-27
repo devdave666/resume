@@ -115,14 +115,17 @@ layout: default
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-section">
-        <a href="mailto:devkumardave26@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com/in/devkumar-dave" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/devdave666" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
-    </section>
+<section id="contact" data-aos="fade-up">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-section">
+    {% for contact in site.data.contact.contacts %}
+      <a href="{{ contact.url }}" target="_blank">
+        <i class="{{ contact.icon }}"></i>
+        <span class="contact-label">{{ contact.label }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
 
   </main>
 </div>
