@@ -34,7 +34,7 @@ nav {
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #e1e9ee;
-  z-index: 1000;
+  z-index: 1; /* Lower than the profile picture's z-index */
 }
 
 nav .container {
@@ -79,6 +79,8 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   padding: 150px 20px 100px;
+  /* Ensure overflow is visible */
+  overflow: visible;
 }
 
 .profile-header h1 {
@@ -95,12 +97,15 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
+  position: relative; /* Added to establish a new positioning context */
+  z-index: 2; /* Ensures the profile picture is above the nav bar */
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 5px solid #fff;
   object-fit: cover;
   margin: 0 auto;
+  margin-top: 30px; /* Increased to provide more space above */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: float 4s ease-in-out infinite;
 }
@@ -111,7 +116,7 @@ nav ul li a:hover {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-10px); /* Reduced upward movement */
   }
 }
 
@@ -305,6 +310,8 @@ footer {
 @media (max-width: 768px) {
   .profile-header {
     padding: 120px 20px 80px;
+    /* Ensure overflow is visible */
+    overflow: visible;
   }
 
   .profile-header h1 {
