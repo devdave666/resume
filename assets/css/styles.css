@@ -31,27 +31,32 @@ html {
 /* Navigation Bar */
 nav {
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #e1e9ee;
-  z-index: 1; /* Lower than the profile picture's z-index */
+  z-index: 1000; /* Ensure the nav bar stays above other elements */
   height: 70px; /* Set the exact height of the nav bar */
 }
 
+/* Navigation Bar Container */
 nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; /* Ensure the container matches the nav bar height */
-  padding: 0 20px; /* Adjust padding as needed */
+  height: 70px; /* Match the nav bar height */
+  padding: 0 20px;
 }
 
+/* Logo */
 nav .logo {
   font-size: 24px;
   font-weight: 700;
   color: var(--primary-color);
 }
 
+/* Navigation Links */
 nav ul {
   display: flex;
   list-style: none;
@@ -65,6 +70,7 @@ nav ul li a {
   color: var(--text-color);
   font-size: 16px;
   transition: color 0.3s;
+  line-height: 70px; /* Vertically center the links */
 }
 
 nav ul li a:hover {
@@ -82,8 +88,8 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   padding: 150px 20px 100px;
-  /* Ensure overflow is visible */
   overflow: visible;
+  margin-top: 70px; /* Add margin to push down from the fixed nav bar */
 }
 
 .profile-header h1 {
@@ -100,15 +106,15 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-  position: relative; /* Establish a new positioning context */
-  z-index: 2; /* Ensure the profile picture is above the nav bar */
+  position: relative;
+  z-index: 2;
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 5px solid #fff;
   object-fit: cover;
   margin: 0 auto;
-  margin-top: 30px; /* Provide more space above */
+  margin-top: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: float 4s ease-in-out infinite;
 }
@@ -120,7 +126,7 @@ nav ul li a:hover {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px); /* Reduced upward movement */
+    transform: translateY(-10px);
   }
 }
 
@@ -144,22 +150,16 @@ nav ul li a:hover {
 /* Main Content */
 .container {
   max-width: 1100px;
-  margin: 80px auto 40px;
+  margin: 0 auto 40px;
   padding: 0 20px;
-}
-
-/* Adjust Sections to Offset Fixed Navigation Bar */
-section {
-  position: relative;
-  padding-top: 70px; /* Height of the nav bar */
-  margin-top: -70px; /* Negative margin to offset the padding */
+  padding-top: 70px; /* Add padding equal to nav bar height */
 }
 
 /* Section Titles */
 .section-title {
   position: relative;
   font-size: 32px;
-  margin-top: 0; /* Remove any top margin */
+  margin-top: 0;
   margin-bottom: 40px;
   text-align: center;
   font-weight: 700;
@@ -181,6 +181,11 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+}
+
+/* Scroll Margin to Offset Fixed Navigation Bar */
+section {
+  scroll-margin-top: 70px; /* Adjust this value if needed */
 }
 
 /* Cards for Content Sections */
@@ -322,7 +327,6 @@ footer {
 @media (max-width: 768px) {
   .profile-header {
     padding: 120px 20px 80px;
-    /* Ensure overflow is visible */
     overflow: visible;
   }
 
@@ -339,7 +343,17 @@ footer {
   }
 
   .container {
-    margin: 60px auto 20px;
+    margin-top: 0;
+    padding-top: 70px; /* Ensure padding-top is consistent */
+  }
+
+  nav .logo {
+    font-size: 20px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    line-height: 70px;
   }
 }
 
