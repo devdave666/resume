@@ -2,21 +2,73 @@
 layout: default
 ---
 
-<header>
-  <h1>{{ site.title }}</h1>
-  <p><strong>Senior IT Service Desk Analyst | Aspiring Full Stack Developer</strong></p>
-  
-  <!-- Profile Picture -->
-  <img src="{{ site.baseurl }}/assets/images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
-  
-  <!-- Contact Information -->
-  <p>
-    <strong>Email:</strong> <a href="mailto:devkumardave26@gmail.com">devkumardave26@gmail.com</a><br>
-    <strong>Phone:</strong> (647) 676-6969<br>
-    <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/devkumar-dave">linkedin.com/in/devkumar-dave</a>
-  </p>
-</header>
+<div class="container">
+  <!-- Profile Card -->
+  <header>
+    <div class="profile-background"></div>
+    <div class="profile-content">
+      <img src="{{ site.baseurl }}/assets/images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+      <div class="profile-info">
+        <h1>{{ site.title }}</h1>
+        <h2 class="headline">Senior IT Service Desk Analyst | Aspiring Full Stack Developer</h2>
+        <p class="location">Toronto, Ontario, Canada</p>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="icon">📧</span>
+            <a href="mailto:devkumardave26@gmail.com">devkumardave26@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="icon">📱</span>
+            <span>(647) 676-6969</span>
+          </div>
+          <div class="contact-item">
+            <span class="icon">💼</span>
+            <a href="https://linkedin.com/in/devkumar-dave">linkedin.com/in/devkumar-dave</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<main>
-  {{ content }}
-</main>
+  <main>
+    <!-- About Section -->
+    <div class="section-card">
+      <h2>About</h2>
+      <div class="section-content">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- Experience Section -->
+    <div class="section-card">
+      <h2>Experience</h2>
+      <div class="section-content">
+        <!-- Experience content will be populated from markdown -->
+      </div>
+    </div>
+
+    <!-- Education Section -->
+    <div class="section-card">
+      <h2>Education</h2>
+      <div class="section-content">
+        <!-- Education content will be populated from markdown -->
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section-card">
+      <h2>Skills</h2>
+      <div class="section-content">
+        <!-- Skills content will be populated from markdown -->
+      </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <div class="section-card">
+      <h2>Certifications</h2>
+      <div class="section-content">
+        <!-- Certifications content will be populated from markdown -->
+      </div>
+    </div>
+  </main>
+</div>
