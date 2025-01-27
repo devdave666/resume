@@ -84,4 +84,4 @@ Dedicated IT professional with over 2 years of experience in IT support and serv
 
 Feel free to [reach out via email](mailto:devkumardave26@gmail.com) or connect with me on [LinkedIn](https://linkedin.com/in/devkumar-dave).
 
-© 2023 Devkumar Dave. All rights reserved.
+© 2025 Devkumar Dave. All rights reserved.
