@@ -6,6 +6,7 @@ media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
 collections:
+  # Pages Collection
   - name: "pages"
     label: "Pages"
     files:
@@ -13,62 +14,96 @@ collections:
         label: "Home"
         name: "home"
         fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Devkumar Dave - Full Stack Developer" }
-          - { label: "About", name: "about", widget: "markdown" }
+          - label: "Title"
+            name: "title"
+            widget: "hidden"
+            default: "Devkumar Dave - Full Stack Developer"
+          - label: "About"
+            name: "about"
+            widget: "markdown"
 
+  # Experience Collection
   - name: "experience"
     label: "Experience"
     editor:
       preview: false
-    files:
-      - file: "_data/experience.yml"
-        label: "Experience Entries"
+    file: "_data/experience.yml"
+    fields:
+      - label: "Experience Entries"
         name: "experience"
+        widget: "list"
         fields:
-          - { label: "Experience Entries", name: "entries", widget: "list", fields: [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Company", name: "company", widget: "string" },
-              { label: "Dates", name: "dates", widget: "string" },
-              { label: "Details", name: "details", widget: "list", field: { label: "Detail", name: "detail", widget: "string" } }
-            ] }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Company"
+            name: "company"
+            widget: "string"
+          - label: "Dates"
+            name: "dates"
+            widget: "string"
+          - label: "Details"
+            name: "details"
+            widget: "list"
+            field:
+              label: "Detail"
+              name: "detail"
+              widget: "string"
 
+  # Education Collection
   - name: "education"
     label: "Education"
     editor:
       preview: false
-    files:
-      - file: "_data/education.yml"
-        label: "Education Entries"
+    file: "_data/education.yml"
+    fields:
+      - label: "Education Entries"
         name: "education"
+        widget: "list"
         fields:
-          - { label: "Education Entries", name: "entries", widget: "list", fields: [
-              { label: "Degree", name: "degree", widget: "string" },
-              { label: "Institution", name: "institution", widget: "string" },
-              { label: "Dates", name: "dates", widget: "string" },
-              { label: "Details", name: "details", widget: "string", required: false }
-            ] }
+          - label: "Degree"
+            name: "degree"
+            widget: "string"
+          - label: "Institution"
+            name: "institution"
+            widget: "string"
+          - label: "Dates"
+            name: "dates"
+            widget: "string"
+          - label: "Details"
+            name: "details"
+            widget: "string"
+            required: false
 
+  # Skills Collection
   - name: "skills"
     label: "Skills"
     editor:
       preview: false
-    files:
-      - file: "_data/skills.yml"
-        label: "Skills List"
+    file: "_data/skills.yml"
+    fields:
+      - label: "Skills"
         name: "skills"
-        fields:
-          - { label: "Skills", name: "skills", widget: "list", field: { label: "Skill", name: "skill", widget: "string" } }
+        widget: "list"
+        field:
+          label: "Skill"
+          name: "skill"
+          widget: "string"
 
+  # Projects Collection
   - name: "projects"
     label: "Projects"
     editor:
       preview: false
-    files:
-      - file: "_data/projects.yml"
-        label: "Projects"
+    file: "_data/projects.yml"
+    fields:
+      - label: "Projects"
         name: "projects"
+        widget: "list"
         fields:
-          - { label: "Projects", name: "projects", widget: "list", fields: [
-              { label: "Title", name: "title", widget: "string" },
-              { label: "Description", name: "description", widget: "markdown" }
-            ] }
+          - label: "Title"
+            name: "title"
+            widget: "string"
+          - label: "Description"
+            name: "description"
+            widget: "markdown"
