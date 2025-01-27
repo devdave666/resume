@@ -144,56 +144,29 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    font-size: 18px;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
     text-decoration: none;
-    border-radius: 50px;
+    color: #fff;
+    font-size: 16px;
     transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
+    backdrop-filter: blur(5px);
 }
 
-.contact-link::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 50px;
-    transition: width 0.3s ease;
-    z-index: 1;
-}
-
-.contact-link:hover::before {
-    width: 100%;
+.contact-link i {
+    font-size: 18px;
+    margin-right: 12px;
+    min-width: 20px;
+    text-align: center;
 }
 
 .contact-link:hover {
-    transform: translateY(-5px);
-}
-
-.contact-icon {
-    margin-right: 12px;
-    font-size: 24px;
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
 }
 
 .contact-text {
-    position: relative;
-    z-index: 2;
-    transition: all 0.3s ease;
-}
-
-.contact-link:hover .contact-text {
-    color: #333;
-}
-
-.contact-link:hover .contact-icon {
-    transform: scale(1.1);
+    font-weight: 400;
 }
 
 /* Responsive adjustments for contact info */
@@ -203,12 +176,14 @@ nav ul li a:hover {
     }
 
     .contact-link {
-        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
         padding: 8px 16px;
     }
 
-    .contact-icon {
-        font-size: 20px;
+    .contact-link i {
+        font-size: 16px;
         margin-right: 10px;
     }
 }
