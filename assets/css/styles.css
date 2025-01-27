@@ -196,6 +196,13 @@ section {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .card::before {
@@ -206,92 +213,101 @@ section {
   background-color: var(--primary-color);
   left: 0;
   top: 0;
+  transition: width 0.3s ease;
 }
 
-.card h3 {
-  font-size: 24px;
-  color: var(--text-color);
-  margin-bottom: 10px;
+.card:hover::before {
+  width: 8px;
 }
 
-.card h4 {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 15px;
+/* Education Cards - Add specific styling if needed */
+.education .card {
+  margin-bottom: 20px; /* Add spacing between education cards */
 }
 
-.card .date-range {
-  font-size: 14px;
-  color: #999;
-  margin-bottom: 20px;
-}
-
-.card ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.card ul li {
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 10px;
-}
-
-.card ul li::before {
-  content: '\f0da';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: var(--primary-color);
-}
-
-/* Skills Section */
+/* Skills Section - Updated for consistency */
 .skills-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 15px; /* Add consistent spacing between skill items */
+  padding: 20px 0;
 }
 
 .skills-list li {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: #fff;
-  padding: 10px 15px;
-  margin: 8px;
+  padding: 12px 20px;
   border-radius: 30px;
   font-size: 16px;
   font-weight: 500;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skills-list li:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Project Cards */
+
+/* Section spacing */
+section {
+  margin-bottom: 40px; /* Add spacing between sections */
+}
+
+/* Main content spacing */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px; /* Increase gap between main sections */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card,
+  .project-card {
+    margin-bottom: 15px; /* Slightly reduced spacing on mobile */
+  }
+
+  main {
+    gap: 30px; /* Slightly reduced gap on mobile */
+  }
+
+  .skills-list {
+    gap: 10px; /* Reduced gap between skill items on mobile */
+  }
+}
+
+/* Project Cards - Updated to match other cards */
 .project-card {
   background-color: #fff;
   border-radius: 8px;
   padding: 30px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Add spacing between cards */
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background-color: var(--primary-color);
+  left: 0;
+  top: 0;
+  transition: width 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.project-card h3 {
-  font-size: 22px;
-  color: var(--text-color);
-  margin-bottom: 15px;
-}
-
-.project-card p {
-  font-size: 16px;
-  color: #666;
+.project-card:hover::before {
+  width: 8px;
 }
 
 /* Contact Section */
