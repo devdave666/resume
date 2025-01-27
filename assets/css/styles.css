@@ -73,7 +73,7 @@ nav ul li a:hover {
 .profile-header {
   position: relative;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
     ), url('{{ site.baseurl }}/assets/images/background.jpg') center/cover fixed;
   color: #fff;
@@ -97,22 +97,23 @@ nav ul li a:hover {
 
 /* Profile Picture */
 .profile-picture {
-  position: relative; /* Added to establish a new positioning context */
-  z-index: 2; /* Ensures the profile picture is above the nav bar */
+  position: relative; /* Establish a new positioning context */
+  z-index: 2; /* Ensure the profile picture is above the nav bar */
   width: 180px;
   height: 180px;
   border-radius: 50%;
   border: 5px solid #fff;
   object-fit: cover;
   margin: 0 auto;
-  margin-top: 30px; /* Increased to provide more space above */
+  margin-top: 30px; /* Provide more space above */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: float 4s ease-in-out infinite;
 }
 
 /* Float Animation for Profile Picture */
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -142,6 +143,11 @@ nav ul li a:hover {
   max-width: 1100px;
   margin: 80px auto 40px;
   padding: 0 20px;
+}
+
+/* Scroll Margin to Offset Fixed Navigation Bar */
+section {
+  scroll-margin-top: 80px; /* Adjust this value if needed */
 }
 
 /* Section Titles */
@@ -357,6 +363,11 @@ footer {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
+}
+
+/* Scroll Margin to Offset Fixed Navigation Bar */
+section {
+  scroll-margin-top: 80px; /* Adjust this value if needed */
 }
 
 /* End of CSS */
