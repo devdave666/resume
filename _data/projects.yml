@@ -1,6 +1,28 @@
 projects:
-  - title: "Web Application Development Project"
-    description: "Developed a full-stack web application using Python (Django), HTML, CSS, and JavaScript..."
-  - title: "Automation Script for Ticket Management"
-    description: "Created a Python script to automate the generation of ServiceNow reports..."
-  # Add more projects...
+  - title: Personal Portfolio Website
+    description: >-
+      * Designed and developed a modern portfolio website from scratch,
+      implementing a complete web development workflow: 
+
+      * Architected the website structure using Jekyll static site generator, creating modular components and layouts for efficient content management 
+
+      * Developed custom HTML templates and CSS styling, implementing modern design patterns including card layouts, smooth animations, and responsive navigation
+
+      * Integrated content management capabilities using Netlify CMS, configuring YAML-based collections for dynamic content updates including experience, education, skills, and projects sections
+
+      * Implemented version control workflow using Git and GitHub, maintaining clean commit history and proper branching strategies
+
+      * Deployed and hosted the website using Netlify, configuring a continuous deployment pipeline that automatically builds and deploys updates from GitHub 
+
+      * Created a responsive design system ensuring optimal viewing experience across desktop, tablet, and mobile devices
+
+      * Utilized modern web technologies including: 
+
+        *  Jekyll for static site generation 
+        *  YAML for structured data management 
+        *  Font Awesome for scalable icons 
+        *  CSS3 for animations and styling 
+        *  Netlify CMS for headless content management 
+        *  Git/GitHub for version control 
+        *  Netlify for hosting and continuous deployment 
+      * Implemented SEO best practices and performance optimizations for improved user experience and search engine visibility
