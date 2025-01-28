@@ -373,18 +373,60 @@ section {
     color: #666;
 }
 
+/* Remove default bullets and add custom styling for main list */
 .project-description ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style: none;
+    padding-left: 0;
     margin: 10px 0;
 }
 
-.project-description li {
+.project-description ul > li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+}
+
+.project-description ul > li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* Style for sub-lists */
+.project-description ul ul {
+    margin: 8px 0 8px 15px;
+}
+
+.project-description ul ul > li {
+    padding-left: 20px;
     margin-bottom: 8px;
 }
 
+.project-description ul ul > li::before {
+    width: 4px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    top: 8px;
+}
+
+/* Paragraph spacing */
 .project-description p {
     margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Remove the old bullet point styles that were causing doubles */
+.project-description ul li::marker {
+    content: none;
+}
+
+.project-description ul {
+    list-style-type: none;
 }
 
 /* Nested lists */
