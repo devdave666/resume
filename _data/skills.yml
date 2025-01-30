@@ -1,11 +1,8 @@
 skills:
-  - "Python"
-  - "JavaScript"
-  - "HTML5"
-  - "CSS3"
-  - "React"
-  - "Node.js"
-  - "SQL"
-  - "MongoDB"
-  - "Git"
-  # Add more skills as needed
+  - Python
+  - JavaScript
+  - HTML5
+  - CSS3
+  - SQL
+  - Git
+  - Netlify
