@@ -18,11 +18,17 @@ projects:
 
       * Utilized modern web technologies including: 
 
-        *  Jekyll for static site generation 
-        *  YAML for structured data management 
-        *  Font Awesome for scalable icons 
-        *  CSS3 for animations and styling 
-        *  Netlify CMS for headless content management 
-        *  Git/GitHub for version control 
-        *  Netlify for hosting and continuous deployment 
+        Jekyll for static site generation 
+
+        YAML for structured data management 
+
+        Font Awesome for scalable icons 
+
+        CSS3 for animations and styling 
+
+        Netlify CMS for headless content management 
+
+        Git/GitHub for version control 
+
+        Netlify for hosting and continuous deployment 
       * Implemented SEO best practices and performance optimizations for improved user experience and search engine visibility
