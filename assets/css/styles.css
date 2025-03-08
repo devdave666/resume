@@ -105,18 +105,18 @@ nav ul li a:hover {
 }
 
 /* Profile Picture */
-.profile-picture {
+.profile-photo {
     position: relative;
     z-index: 2;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 5px solid #fff;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-top: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    animation: float 4s ease-in-out infinite;
+    width: 180px; /* You can adjust this size */
+    height: 180px; /* You can adjust this size */
+    border-radius: 50%; /* Makes the image circular */
+    border: 5px solid #fff; /* White border */
+    object-fit: cover; /* Ensures the image covers the area */
+    display: block; /* Ensures it behaves like a block element */
+    margin: 30px auto; /* Centers the image and adds top margin */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    animation: float 4s ease-in-out infinite; /* Floating animation */
 }
 
 /* Float Animation for Profile Picture */
