@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Devkumar Dave - Full Stack Developer Portfolio">
+    <title>Devkumar Dave - Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Modern CSS Reset and Variables */
+        :root {
+            --primary-color: #f5f5f7;
+            --secondary-color: #ffd700;
+            --accent-color: #ffb700;
+            --background-color: #000000;
+            --card-background: #1d1d1f;
+            --text-color: #f5f5f7;
+            --text-secondary: #86868b;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --transition-speed: 0.3s;
+            --section-spacing: 4rem;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: var(--text-color);
+            line-height: 1.47059;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+            -webkit-font-smoothing: antialiased;
+            position: relative;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        /* Add mesh gradient background */
+        .mesh-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(800px at 70% 30%, rgba(147, 197, 253, 0.03) 0%, transparent 70%),
+                radial-gradient(600px at 20% 60%, rgba(147, 197, 253, 0.03) 0%, transparent 70%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Glowing orbs with increased visibility */
+        .background-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.1;
+            z-index: 0;
+        }
+
+        .orb-1 {
+            top: 10%;
+            left: 5%;
+            width: 600px;
+            height: 600px;
+            background: var(--secondary-color);
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-2 {
+            bottom: 10%;
+            right: 5%;
+            width: 500px;
+            height: 500px;
+            background: rgba(147, 197, 253, 0.5);
+            animation: float 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(50px, -50px) scale(1.2); }
+        }
+
+        /* Container Styles */
+        .container {
+            position: relative;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            border-radius: 30px;
+            box-shadow: 
+                inset 0 0 20px rgba(255, 215, 0, 0.15),
+                0 0 30px rgba(255, 215, 0, 0.2),
+                0 0 60px rgba(255, 215, 0, 0.1),
+                0 0 100px rgba(255, 215, 0, 0.05),
+                0 0 150px rgba(255, 215, 0, 0.025);
+            width: 92%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--section-spacing);
+        }
+
+        /* Remove the fixed LED ambient light effects */
+        .container::before,
+        .container::after {
+            display: none;
+        }
+
+        /* Link Styles */
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--text-secondary), transparent);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 4rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .headline {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin: 0.5rem 0;
+            font-weight: 500;
+        }
+
+        /* Contact Info Styles */
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            position: relative;
+        }
+
+        .contact-info a {
+            position: relative;
+            padding: 0.5rem 1rem;
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: transparent;
+            border: 1px solid transparent;
+            overflow: hidden;
+            border-radius: 4px;
+            box-shadow: none;
+        }
+
+        .contact-info a:hover {
+            color: #fff;
+            text-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        .contact-info a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent 0%,
+                rgba(255, 215, 0, 0.2) 50%,
+                transparent 100%
+            );
+            transform: translateX(-100%) skewX(-30deg);
+            transition: transform 0.5s ease;
+        }
+
+        .contact-info a:hover::before {
+            transform: translateX(100%) skewX(-30deg);
+            transition: transform 1s ease;
+        }
+
+        .contact-info a::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: transparent;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover::after {
+            border-color: rgba(255, 215, 0, 0.2);
+            box-shadow: 
+                0 0 15px rgba(255, 215, 0, 0.2),
+                inset 0 0 15px rgba(255, 215, 0, 0.2);
+        }
+
+        @keyframes sweep {
+            0% {
+                transform: translateX(-100%) skewX(-30deg);
+            }
+            100% {
+                transform: translateX(100%) skewX(-30deg);
+            }
+        }
+
+        /* Remove previous particle effects */
+        @keyframes float-particle {
+            0%, 100% { transform: translateY(0) translateX(0); opacity: 0; }
+            50% { transform: translateY(-10px) translateX(5px); opacity: 0.3; }
+        }
+
+        /* Section Styles */
+        section {
+            margin: 0;
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(29, 29, 31, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 
+                inset 0 0 20px rgba(147, 197, 253, 0.05),
+                0 4px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transform: translateZ(0);
+            will-change: transform;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        section:hover {
+            background: rgba(29, 29, 31, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px) translateZ(0);
+            box-shadow: 
+                inset 0 0 25px rgba(147, 197, 253, 0.08),
+                0 4px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            position: relative;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary-color);
+            border-radius: 2px;
+        }
+
+        /* Skills Grid */
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+
+        .skills-list li {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            padding-left: 2.5rem;
+            margin: 0;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            transform: translateZ(0);
+            will-change: transform;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .skills-list li strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        .skills-list li::before {
+            content: '→';
+            position: absolute;
+            left: 1rem;
+            top: 1.45rem;
+            transform: none;
+            color: var(--secondary-color);
+        }
+
+        .skills-list li:hover {
+            transform: translateY(-5px) translateZ(0);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        /* Responsive adjustments for skills grid */
+        @media (max-width: 1200px) {
+            .skills-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Certifications list specific styling */
+        .certifications-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+            padding: 0;
+            list-style: none;
+        }
+
+        .certifications-list li {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 1.25rem;
+            padding-left: 2.5rem;
+            margin: 0;
+            transform: translateZ(0);
+            will-change: transform;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+            position: relative;
+        }
+
+        .certifications-list li::before {
+            content: '→';
+            position: absolute;
+            left: 1rem;
+            top: 1.25rem;
+            transform: none;
+        }
+
+        .certifications-list li:hover {
+            transform: translateY(-5px) translateZ(0);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .certifications-list li strong {
+            color: var(--secondary-color);
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+
+        /* Experience Cards */
+        .experience, .education, .project, .award {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transform: translateZ(0);
+            will-change: transform;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .experience:last-child,
+        .education:last-child,
+        .project:last-child,
+        .award:last-child {
+            margin-bottom: 0;
+        }
+
+        .experience:hover, .education:hover, .project:hover, .award:hover {
+            transform: translateY(-5px) translateZ(0);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        em {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            font-style: normal;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 2.5rem;
+            margin: 0.75rem 0;
+            line-height: 1.6;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Default arrow positioning for all lists */
+        ul li::before {
+            content: '→';
+            position: absolute;
+            left: 1rem;
+            line-height: inherit;
+            color: var(--secondary-color);
+        }
+
+        /* Skills List - keep as is */
+        .skills-list li::before {
+            top: 1.45rem;
+        }
+
+        /* Certifications list - keep as is */
+        .certifications-list li {
+            padding: 1.25rem;
+            padding-left: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .certifications-list li::before {
+            top: 1.25rem;
+        }
+
+        /* Experience and Project Lists */
+        .experience ul li,
+        .project ul li {
+            padding-left: 2.5rem;
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
+
+        .experience ul li::before,
+        .project ul li::before {
+            top: 0;
+            line-height: 1.6;
+        }
+
+        /* Additional Information */
+        #additional ul li {
+            padding-left: 2.5rem;
+            margin: 0.75rem 0;
+            line-height: 1.6;
+        }
+
+        #additional ul li::before {
+            top: 0;
+            line-height: 1.6;
+        }
+
+        /* Ensure consistent line heights */
+        .skills-list li strong,
+        .certifications-list li strong,
+        #additional ul li strong {
+            line-height: 1.6;
+            display: inline-block;
+        }
+
+        /* Remove any transforms that might affect positioning */
+        .experience ul li,
+        .project ul li,
+        #additional ul li {
+            transform: none;
+        }
+
+        /* Adjust spacing for better alignment */
+        .experience ul li:first-child,
+        .project ul li:first-child,
+        #additional ul li:first-child {
+            margin-top: 0;
+        }
+
+        .experience ul li:last-child,
+        .project ul li:last-child,
+        #additional ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Profile Picture */
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            border: 3px solid var(--secondary-color);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+            transform: translateZ(0);
+            will-change: transform;
+            transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.05) translateZ(0);
+            box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: var(--section-spacing);
+            padding: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--text-secondary), transparent);
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color var(--transition-speed) ease;
+            font-size: 1rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--secondary-color);
+        }
+
+        .footer-message {
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            line-height: 1.6;
+            color: var(--text-secondary);
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            
+            .container {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: none;
+            }
+            
+            a {
+                color: black;
+            }
+            
+            .profile-picture {
+                width: 120px;
+                height: 120px;
+            }
+
+            section {
+                background: none;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mesh-gradient"></div>
+    <div class="background-orb orb-1"></div>
+    <div class="background-orb orb-2"></div>
+    <div class="container">
+        <header>
+            <img src="profile-picture.jpg" alt="Devkumar Dave" class="profile-picture">
+            <h1>Devkumar Dave</h1>
+            <p class="headline">Senior IT Service Desk Analyst | Aspiring Full Stack Developer</p>
+            <div class="contact-info">
+                <p><a href="mailto:devkumardave26@gmail.com">devkumardave26@gmail.com</a></p>
+                <p><a href="tel:+16476766969">(647) 676-6969</a></p>
+                <p><a href="https://www.linkedin.com/in/devkumar-dave" target="_blank">linkedin.com/in/devkumar-dave</a></p>
+            </div>
+        </header>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>Dedicated IT professional with over 2 years of experience in IT support and service management. Proficient in Python, HTML, CSS, and web development technologies. Seeking a Full Stack Developer position to leverage technical expertise and contribute to innovative software solutions while continuing to develop leadership skills.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Core Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Python, JavaScript, HTML5, CSS3</li>
+                <li><strong>Web Development:</strong> Front-end (React, Angular), Back-end (Node.js, Express)</li>
+                <li><strong>Database Management:</strong> SQL, MongoDB</li>
+                <li><strong>Tools & Technologies:</strong> Git, GitHub, ServiceNow, Agile/Scrum methodologies</li>
+                <li><strong>IT Support:</strong> Troubleshooting, SLA management, ServiceNow dashboard creation</li>
+                <li><strong>Soft Skills:</strong> Leadership, Team Collaboration, Problem-Solving, Customer Service</li>
+                <li><strong>Languages:</strong> English (Fluent), Hindi (Fluent), Gujarati (Fluent)</li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="experience">
+                <h3>Senior IT Service Desk Analyst / Queue Manager</h3>
+                <p><em>CGI Inc., Toronto | June 2021 – Present</em></p>
+                <ul>
+                    <li>Managed client communications and diagnosed technical issues across diverse systems.</li>
+                    <li>Created and optimized processes and ServiceNow dashboards to enhance operational efficiency.</li>
+                    <li>Achieved an 85% first-contact resolution rate, efficiently resolving most issues during initial interactions.</li>
+                    <li>Reduced Level 1 ticket queue from 750 to under 100, surpassing the SLA target of 500 tickets.</li>
+                    <li>Implemented a 24-hour update protocol on all open tickets, improving customer communication and satisfaction.</li>
+                    <li>Developed systematic preemptive follow-up procedures, resulting in heightened customer satisfaction and reduced resolution times.</li>
+                    <li>Ensured 98% adherence to Service Level Agreements (SLAs), enhancing service reliability and customer trust.</li>
+                    <li>Introduced process improvements that increased ticket closure rate by 25%, leading to faster resolution times.</li>
+                </ul>
+            </div>
+
+            <div class="experience">
+                <h3>Office Administrator</h3>
+                <p><em>Dr. Kachicnik and Associates Dental Office | July 2018 – February 2020</em></p>
+                <ul>
+                    <li>Warmly greeted patients and visitors, ensuring a positive first impression.</li>
+                    <li>Managed incoming calls, scheduled appointments, and maintained the office calendar for efficient workflow.</li>
+                    <li>Maintained and updated patient records and appointment schedules with accuracy and confidentiality.</li>
+                    <li>Handled billing, insurance claims, and accounts receivable, contributing to the financial health of the office.</li>
+                    <li>Assisted dental staff with day-to-day operations, including preparing patient charts and organizing materials.</li>
+                    <li>Coordinated with suppliers and managed inventory to ensure availability of necessary dental and office supplies.</li>
+                    <li>Implemented and maintained office policies and procedures to ensure compliance with industry standards.</li>
+                    <li>Monitored and managed office equipment, arranging repairs or replacements as needed.</li>
+                    <li>Conducted follow-up calls to patients post-procedures to ensure satisfaction with services provided.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Certificate in Information Technology</h3>
+                <p><em>NPower Canada | February 2021 – June 2021</em></p>
+            </div>
+            <div class="education">
+                <h3>Advanced Diploma in Mechanical Engineering Technology</h3>
+                <p><em>Seneca College | January 2018 – September 2020</em></p>
+            </div>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul class="certifications-list">
+                <li><strong>Google IT Support Professional Certificate</strong> (CompTIA A+ equivalent) | Coursera | May 2021</li>
+                <li><strong>Windows Server 2022</strong> | Skillsoft | January 2023</li>
+                <li><strong>Problem Solving and Decision Making through Leadership</strong> | Skillsoft | December 2024</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Web Application Development Project</h3>
+                <ul>
+                    <li>Developed a full-stack web application using Python (Django), HTML, CSS, and JavaScript.</li>
+                    <li>Implemented user authentication, data visualization, and responsive design.</li>
+                    <li>Deployed the application on AWS, ensuring scalability and security.</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Automation Script for Ticket Management</h3>
+                <ul>
+                    <li>Created a Python script to automate the generation of ServiceNow reports.</li>
+                    <li>Improved efficiency by reducing manual report generation time by 50%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Awards</h2>
+            <div class="award">
+                <h3>Bravo Award | CGI Inc. | August 2022</h3>
+                <p><em>"Thank you, Devkumar, for your constant hard work in the Backlog team. You are always available and willing to take on more tasks. We really appreciate your work—you are truly a superhero!"</em></p>
+            </div>
+            <div class="award">
+                <h3>Bravo Award | CGI Inc. | June 2024</h3>
+                <p><em>"Great work on the backlog in the past months. Keep up your great work!"</em></p>
+            </div>
+        </section>
+
+        <section id="additional">
+            <h2>Additional Information</h2>
+            <ul>
+                <li><strong>Volunteer Work:</strong> Assisted in setting up networks and troubleshooting technical issues for local non-profit organizations. Mentored new team members at CGI Inc., providing training and support during onboarding.</li>
+                <li><strong>Interests:</strong> Passionate about continuous learning in software development and emerging technologies. Enjoy building personal coding projects and contributing to open-source initiatives.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/devdave666" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/devkumar-dave" target="_blank">LinkedIn</a>
+                    <a href="mailto:devkumardave26@gmail.com">Email</a>
+                    <a href="tel:+16476766969">Contact</a>
+                </div>
+                <p class="footer-message">Thank you for visiting my portfolio. I'm always open to discussing new opportunities and collaborations in software development and IT.</p>
+                <p class="copyright">© 2025 Devkumar Dave. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html> 

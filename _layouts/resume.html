@@ -1,0 +1,136 @@
+---
+layout: default
+---
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="container">
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="profile-header">
+  <!-- Profile Picture -->
+  <img src="{{ site.baseurl }}/assets/images/profile-picture.jpg" alt="Profile Picture" class="profile-photo" data-aos="fade-up">
+
+  <!-- Name and Headline -->
+  <h1 data-aos="fade-up" data-aos-delay="100">{{ site.title }}</h1>
+  <p class="headline" data-aos="fade-up" data-aos-delay="200">Senior IT Service Desk Analyst | Aspiring Full Stack Developer</p>
+
+  <!-- Contact Information -->
+  <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
+    <a href="tel:+16476766969" class="contact-link">
+      <i class="fa-solid fa-phone"></i>
+      <span class="contact-text">+1 (647) 676-6969</span>
+    </a>
+    <a href="mailto:devkumardave26@gmail.com" class="contact-link">
+      <i class="fa-regular fa-envelope"></i>
+      <span class="contact-text">devkumardave26@gmail.com</span>
+    </a>
+    <a href="https://linkedin.com/in/devkumar-dave" target="_blank" class="contact-link">
+      <i class="fa-brands fa-linkedin"></i>
+      <span class="contact-text">linkedin.com/in/devkumar-dave</span>
+    </a>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <main>
+
+    <!-- About Section -->
+    <section id="about" data-aos="fade-up">
+      <h2 class="section-title">About</h2>
+      <div class="section-content">
+        {{ page.about | markdownify }}
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" data-aos="fade-up">
+      <h2 class="section-title">Experience</h2>
+      {% for experience in site.data.experience.experience %}
+        <div class="card">
+          <span class="border-right"></span>
+          <span class="border-bottom"></span>
+          <h3>{{ experience.title }}</h3>
+          <h4>{{ experience.company }}</h4>
+          <p class="date-range">{{ experience.dates }}</p>
+          <ul>
+            {% for detail in experience.details %}
+              <li>{{ detail }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" data-aos="fade-up">
+      <h2 class="section-title">Education</h2>
+      {% for education in site.data.education.education %}
+        <div class="card">
+          <span class="border-right"></span>
+          <span class="border-bottom"></span>
+          <h3>{{ education.degree }}</h3>
+          <h4>{{ education.institution }}</h4>
+          <p class="date-range">{{ education.dates }}</p>
+          {% if education.details %}
+            <p>{{ education.details }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" data-aos="zoom-in">
+      <h2 class="section-title">Skills</h2>
+      <ul class="skills-list">
+        {% for skill in site.data.skills.skills %}
+          <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+<section id="projects" data-aos="fade-up">
+  <h2 class="section-title">Projects</h2>
+  {% for project in site.data.projects.projects %}
+    <div class="project-card">
+      <h3>{{ project.title }}</h3>
+      <div class="project-description">
+        {{ project.description | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+<!-- Contact Section -->
+<section id="contact" data-aos="fade-up">
+  <h2 class="section-title">Contact</h2>
+  <div class="contact-section">
+    {% for contact in site.data.contact.contacts %}
+      <a href="{{ contact.url }}" target="_blank" class="contact-button">
+        <i class="{{ contact.icon }}"></i>
+        {{ contact.label }}
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Devkumar Dave. All rights reserved.
+</footer>

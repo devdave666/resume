@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "content"
+    label: "Content"
+    files:
+      - label: "Resume Content"
+        name: "resume"
+        file: "index.html"
+        fields:
+          - {label: "Profile Picture", name: "profile_picture", widget: "image"}
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Title", name: "headline", widget: "string"}
+          - {label: "Email", name: "email", widget: "string"}
+          - {label: "Phone", name: "phone", widget: "string"}
+          - {label: "LinkedIn", name: "linkedin", widget: "string"}
+          - {label: "Objective", name: "objective", widget: "text"}
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            fields:
+              - {label: "Category", name: "category", widget: "string"}
+              - {label: "Skills List", name: "items", widget: "text"}
+          - label: "Experience"
+            name: "experience"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Company", name: "company", widget: "string"}
+              - {label: "Period", name: "period", widget: "string"}
+              - {label: "Responsibilities", name: "responsibilities", widget: "list"}

@@ -1,0 +1,10 @@
+contacts:
+  - label: Email
+    url: mailto:devkumardave26@gmail.com
+    icon: fa-regular fa-envelope
+  - label: LinkedIn
+    url: https://linkedin.com/in/devkumar-dave
+    icon: fa-brands fa-linkedin
+  - label: GitHub
+    url: https://github.com/devdave666
+    icon: fa-brands fa-github
