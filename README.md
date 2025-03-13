@@ -70,4 +70,4 @@ Feel free to reach out if you have any questions or would like to connect:
 
 ---
 
-© 2024 Devkumar Dave. All rights reserved.
+© 2025 Devkumar Dave. All rights reserved.
